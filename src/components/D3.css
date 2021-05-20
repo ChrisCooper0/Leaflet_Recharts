@@ -1,0 +1,20 @@
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info {
+  width: 50vw;
+  height: 60vh;
+  background-color: whitesmoke;
+  margin-left: 10px;
+}
+
+.d3 {
+  width: 50vw;
+  height: 60vh;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: whitesmoke;
+}

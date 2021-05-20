@@ -1,0 +1,19 @@
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.map_info {
+  width: 50vw;
+  height: 60vh;
+  background-color: whitesmoke;
+  margin-left: 10px;
+}
+
+.leaflet-container {
+  width: 50vw;
+  height: 60vh;
+  margin-left: 10px;
+  margin-right: 10px;
+}
