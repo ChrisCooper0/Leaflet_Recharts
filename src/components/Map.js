@@ -47,7 +47,7 @@ function Map() {
         <h4>
           UK Crime Data for {previousMonth} {currentYear}
         </h4>
-        <p>// Add totals data from API</p>
+        <p>Add total crimes, break down by category etc</p>
         <p>
           // Stretch goal: Add filterable totals table and make it interactive
           with the map
@@ -82,7 +82,6 @@ function Map() {
             >
               {/* Popup displays information about the crime category and outcome if available */}
               <div>
-                <h4>Information</h4>
                 <p>{"Category: " + data.category}</p>
                 <p>
                   {data.outcome_status === null

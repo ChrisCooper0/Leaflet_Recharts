@@ -4,10 +4,12 @@ import Header from "./components/Header";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Map from "./components/Map";
 import D3Map from "./components/D3Map";
+import Home from "./components/Home";
 
-const Home = () => (
+const HomePage = () => (
   <div>
     <h2>Home</h2>
+    <Home />
   </div>
 );
 
@@ -32,7 +34,7 @@ function App() {
         <Route path="/:page" component={Header} />
         <Route exact path="/" component={Header} />
         <Route exact path="/" component={Home} />
-        <Route exact path="/home" component={Home} />
+        <Route exact path="/home" component={HomePage} />
         <Route exact path="/leaflet" component={Leaflet} />
         <Route exact path="/d3" component={D3} />
       </Router>
