@@ -40,17 +40,122 @@ function Map() {
     currentYear = new Date().getFullYear();
   }
 
+  // Total & breakdown data
+
+  let total = data.length.toLocaleString("en");
+
+  let antiSocial = [];
+  for (let i = 0; i < data.length; i++) {
+    if (data[i].category === "anti-social-behaviour") {
+      antiSocial.push(data[i]);
+    }
+  }
+
+  let bike = [];
+  for (let i = 0; i < data.length; i++) {
+    if (data[i].category === "bicycle-theft") {
+      bike.push(data[i]);
+    }
+  }
+
+  let burglary = [];
+  for (let i = 0; i < data.length; i++) {
+    if (data[i].category === "burglary") {
+      burglary.push(data[i]);
+    }
+  }
+
+  let criminalDamage = [];
+  for (let i = 0; i < data.length; i++) {
+    if (data[i].category === "criminal-damage-arson") {
+      criminalDamage.push(data[i]);
+    }
+  }
+
+  let drugs = [];
+  for (let i = 0; i < data.length; i++) {
+    if (data[i].category === "drugs") {
+      drugs.push(data[i]);
+    }
+  }
+
+  let otherTheft = [];
+  for (let i = 0; i < data.length; i++) {
+    if (data[i].category === "other-theft") {
+      otherTheft.push(data[i]);
+    }
+  }
+
+  let weapons = [];
+  for (let i = 0; i < data.length; i++) {
+    if (data[i].category === "possession-of-weapons") {
+      weapons.push(data[i]);
+    }
+  }
+
+  let publicOrder = [];
+  for (let i = 0; i < data.length; i++) {
+    if (data[i].category === "public-order") {
+      publicOrder.push(data[i]);
+    }
+  }
+
+  let robbery = [];
+  for (let i = 0; i < data.length; i++) {
+    if (data[i].category === "robbery") {
+      robbery.push(data[i]);
+    }
+  }
+
+  let shoplifting = [];
+  for (let i = 0; i < data.length; i++) {
+    if (data[i].category === "shoplifting") {
+      shoplifting.push(data[i]);
+    }
+  }
+
+  let theft = [];
+  for (let i = 0; i < data.length; i++) {
+    if (data[i].category === "theft-from-the-person") {
+      theft.push(data[i]);
+    }
+  }
+
+  let vehicle = [];
+  for (let i = 0; i < data.length; i++) {
+    if (data[i].category === "vehicle-crime") {
+      vehicle.push(data[i]);
+    }
+  }
+
+  let violent = [];
+  for (let i = 0; i < data.length; i++) {
+    if (data[i].category === "violent-crime") {
+      violent.push(data[i]);
+    }
+  }
+
+  let other = [];
+  for (let i = 0; i < data.length; i++) {
+    if (data[i].category === "other-crime") {
+      other.push(data[i]);
+    }
+  }
+
   // JSX returns react-leaflet MapContainer
   return (
     <div className="flex">
       <div className="map_info">
         <h4>
-          UK Crime Data for {previousMonth} {currentYear}
+          Central London Crime Data for {previousMonth} {currentYear}
         </h4>
-        <p>Add total crimes, break down by category etc</p>
+        <p>There were {total} crimes recorded.</p>
+        <p>Add breakdowns</p>
+
         <p>
-          // Stretch goal: Add filterable totals table and make it interactive
-          with the map
+          // Stretch goal: Change crime category breakdown to a mapped unordered
+          list or add filterable totals table and make it interactive with the
+          map
         </p>
       </div>
 
