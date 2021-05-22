@@ -149,14 +149,23 @@ function Map() {
         <h4>
           Central London Crime Data for {previousMonth} {currentYear}
         </h4>
-        <p>There were {total} crimes recorded.</p>
-        <p>Add breakdowns</p>
-
-        <p>
-          // Stretch goal: Change crime category breakdown to a mapped unordered
-          list or add filterable totals table and make it interactive with the
-          map
-        </p>
+        <p className="text">There were {total} crimes recorded.</p>
+        <ul>
+          <li>Anti-Social: {antiSocial.length}</li>
+          <li>Bicycle Theft: {bike.length}</li>
+          <li>Burglary: {burglary.length}</li>
+          <li>Criminal Damage: {criminalDamage.length}</li>
+          <li>Drugs: {drugs.length}</li>
+          <li>Other Theft: {otherTheft.length}</li>
+          <li>Weapons: {weapons.length}</li>
+          <li>Public Order: {publicOrder.length}</li>
+          <li>Robbery: {robbery.length}</li>
+          <li>Shoplifting: {shoplifting.length}</li>
+          <li>Theft from person: {theft.length}</li>
+          <li>Vehicle Crime: {vehicle.length}</li>
+          <li>Violent Crime: {violent.length}</li>
+          <li>Other Crime: {other.length}</li>
+        </ul>
       </div>
 
       <MapContainer
