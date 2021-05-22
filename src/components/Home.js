@@ -16,7 +16,7 @@ function Home() {
           TypeScript for this app in the interest of time. Below are some
           stretch goals I will continue to work in my own time.
         </p>
-        <ul>
+        <ul className="stretch-goals">
           <li>- Utilise CSS Modules and update UI</li>
           <li>- Use react-table for the Leaflet Map data breakdown</li>
           <li>- Refactor to TypeScript</li>

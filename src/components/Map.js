@@ -197,7 +197,11 @@ function Map() {
             >
               {/* Popup displays information about the crime category and outcome if available */}
               <div>
-                <p>{"Category: " + data.category}</p>
+                <p>
+                  {"Category: " +
+                    data.category.charAt(0).toUpperCase() +
+                    data.category.split("-").join(" ").slice(1)}
+                </p>
                 <p>
                   {data.outcome_status === null
                     ? "Outcome: Unavailable"
