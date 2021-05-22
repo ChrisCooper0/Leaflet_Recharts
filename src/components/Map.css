@@ -11,15 +11,15 @@
 }
 
 .map_info {
-  width: 50vw;
-  height: 60vh;
+  width: 40vw;
+  height: 65vh;
   background-color: whitesmoke;
   margin-left: 10px;
 }
 
 .leaflet-container {
-  width: 50vw;
-  height: 60vh;
+  width: 60vw;
+  height: 65vh;
   margin-left: 10px;
   margin-right: 10px;
 }
@@ -27,9 +27,9 @@
 ul {
   list-style-type: none;
   margin: 20px 20px;
-  line-height: 1.2rem;
+  line-height: 1.25rem;
 }
 
 .text {
-  margin: 20px 20px;
+  margin: 15px 20px;
 }

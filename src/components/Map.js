@@ -150,6 +150,7 @@ function Map() {
           Central London Crime Data for {previousMonth} {currentYear}
         </h4>
         <p className="text">There were {total} crimes recorded.</p>
+        <p className="text">Click the markers to see more detail.</p>
         <ul>
           <li>Anti-Social: {antiSocial.length}</li>
           <li>Bicycle Theft: {bike.length}</li>
