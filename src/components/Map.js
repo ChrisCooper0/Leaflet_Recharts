@@ -42,7 +42,7 @@ function Map() {
 
   // Total & breakdown data
 
-  let total = data.length.toLocaleString("en");
+  const total = data.length.toLocaleString("en");
 
   let antiSocial = [];
   for (let i = 0; i < data.length; i++) {
