@@ -2,13 +2,13 @@ import React from "react";
 import * as d3 from "d3";
 import "./BarChart.css";
 
-// Use d3 to return a grouped bar chart
-// Ideally separate bars for each outcome category grouped by crime type
-//  e.g. https://bl.ocks.org/bricedev/0d95074b6d83a77dc3ad
-
+// Goal: Use d3 to return a grouped bar chart
+// Separate bars for each last outcome category grouped by crime type
+// Similar to this example: https://bl.ocks.org/bricedev/0d95074b6d83a77dc3ad
 // x axis = One bar for each "Crime type"
 // y axis = "Last outcome category" summed for each crime type
 
+// Call getData initially, fetch and parse csv to an array of objects
 getData();
 
 async function getData() {
@@ -20,14 +20,14 @@ async function getData() {
     const crime = row[9];
     const outcome = row[10];
     // console.log(crime, outcome);
-    // Need variables for sum of crime & sum of outcome and then use them with d3 so shouldn't be available outside of this function
+    // Need variables for sum of crime & sum of outcome and then use them with d3
   });
 }
 
 function BarChart() {
   return (
     <div>
-      <div id="d3">Test</div>
+      <div id="d3">D3 Chart here</div>
     </div>
   );
 }
