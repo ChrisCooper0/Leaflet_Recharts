@@ -12,3 +12,7 @@ h4,
 p {
   margin: 50px 20px;
 }
+
+.note {
+  margin-bottom: 0px;
+}
