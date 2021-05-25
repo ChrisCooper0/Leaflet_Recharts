@@ -28,11 +28,7 @@ csv("2020-01-city-of-london-street.csv").then((d) => {
 });
 
 function BarChart() {
-  return (
-    <div>
-      <div>D3 Map</div>
-    </div>
-  );
+  return <div></div>;
 }
 
 export default BarChart;

@@ -22,7 +22,7 @@ const Leaflet = () => (
 
 const D3 = () => (
   <div>
-    <h2>D3 Map</h2>
+    <h2>Recharts</h2>
     <D3Map />
   </div>
 );

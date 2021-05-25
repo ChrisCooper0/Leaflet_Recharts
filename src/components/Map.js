@@ -142,6 +142,7 @@ function Map() {
     }
   }
 
+
   // JSX returns react-leaflet MapContainer
   return (
     <div className="flex">
