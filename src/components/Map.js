@@ -142,7 +142,6 @@ function Map() {
     }
   }
 
-
   // JSX returns react-leaflet MapContainer
   return (
     <div className="flex">
@@ -168,6 +167,12 @@ function Map() {
           <li>Violent Crime: {violent.length}</li>
           <li>Other Crime: {other.length}</li>
         </ul>
+        <small className="text">
+          Source: <nbsp />
+          <a href="https://data.police.uk" target="_blank">
+            data.police.uk
+          </a>
+        </small>
       </div>
 
       <MapContainer
