@@ -169,7 +169,7 @@ function Map() {
         </ul>
         <small className="text">
           Source: <nbsp />
-          <a href="https://data.police.uk" target="_blank">
+          <a href="https://data.police.uk" target="_blank" rel="noreferrer">
             data.police.uk
           </a>
         </small>
