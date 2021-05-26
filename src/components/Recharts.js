@@ -11,7 +11,6 @@ import {
   ResponsiveContainer,
 } from "recharts";
 
-
 // Dummy data based on data.police.uk api data
 // Change Q1 & Q2 values to data from api
 
@@ -43,7 +42,7 @@ const data = [
     Q2: 3546,
   },
   {
-    name: "Other theft",
+    name: "Other Theft",
     Q1: 7890,
     Q2: 1345,
   },
@@ -101,14 +100,14 @@ export default class Recharts extends PureComponent {
             top: 20,
             right: 30,
             left: 20,
-            bottom: 5,
+            bottom: 80,
           }}
         >
           <CartesianGrid strokeDasharray="2 2" />
-          <XAxis dataKey="name" />
+          <XAxis dataKey="name" interval={0} angle={45} textAnchor="start" />
           <YAxis />
           <Tooltip />
-          <Legend verticalAlign="top" height={50} />
+          <Legend verticalAlign="top" height={30} />
           <Bar dataKey="Q1" stackId="a" fill="#2A8FBE" />
           <Bar dataKey="Q2" stackId="a" fill="#00C6BF" />
         </BarChart>
