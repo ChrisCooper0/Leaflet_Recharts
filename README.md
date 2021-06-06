@@ -1,5 +1,5 @@
 ### View the site [here](https://zen-murdock-8d84f0.netlify.app/)
-### Alternatively clone the report and run 'npm install' then 'npm start' to run locally
+### Alternatively clone the repo and run 'npm install' then 'npm start' to run locally
 
 
 
